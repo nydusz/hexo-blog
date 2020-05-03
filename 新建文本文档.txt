@@ -1,0 +1,10 @@
+现在使用自定义CSS的办法：
+在_config.yml或next.yml中，设置
+
+custom_file_path:
+  style: source/_data/styles.styl
+然后，将自定义CSS放进source/_data/styles.styl文件中即可
+
+
+
+https://github.com/theme-next/hexo-theme-next/issues/973
