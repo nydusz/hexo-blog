@@ -1,0 +1,79 @@
+
+// 修改背景图片
+body {
+    background: url(/images/arisha.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+// 修改主体透明度
+// 这个设置并不好使，会使整个页面蒙上一层不透明白色图层，不建议使用
+// 建议使用下面的 .post-block 与 .comments
+
+
+// 修改文章块透明度
+.post-block {
+	padding: $content-desktop-padding;
+	background: rgba(255,255,255,0.9);   //white;
+	box-shadow: $box-shadow-inner;
+	border-radius: $border-radius-inner;
+}
+
+// Comments blocks.
+.comments {
+	padding: $content-desktop-padding;
+	margin: initial;
+	margin-top: sboffset;
+	background: rgba(255,255,255,0.9);   //white;
+	box-shadow: $box-shadow;
+	border-radius: $border-radius;
+}
+
+
+
+// 设置主页面宽度
+.header{
+    width: 90%;
+    +tablet() {
+        width: 100%;
+    }
+    +mobile() {
+        width: 100%;
+    }
+}
+.container .main-inner {
+    width: 90%;
+    +tablet() {
+        width: 100%;
+    }
+    +mobile() {
+        width: 100%;
+    }
+}
+.content-wrap {
+    width: calc(100% - 260px);
+    +tablet() {
+        width: 100%;
+    }
+    +mobile() {
+        width: 100%;
+    }
+}
+
+
+.post-body p a{
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+  &:hover {
+    color: #fc6423;
+    border-bottom: none;
+    border-bottom: 1px solid #fc6423;
+  }
+}
+.footer {
+background:black;
+
+}
